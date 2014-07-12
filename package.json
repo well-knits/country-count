@@ -1,0 +1,15 @@
+{
+  "name": "country-count",
+  "version": "0.0.1",
+  "description": "Given an array of string, return a list of countries and number of times country appears in array",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "tap": "^0.4.11",
+    "world-countries": "^1.4.2"
+  }
+}
