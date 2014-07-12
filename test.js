@@ -12,3 +12,15 @@ test('should return list with countries and nr of occurances', function (t) {
 
   t.end()
 })
+
+
+test('should not parse IT, SO or AM as countries', function (t) {
+  var possibleCountries = ['it', 'so', 'am', 'uk']
+    , countryArr = countryCount(possibleCountries)
+
+    t.deepEqual(countryArr, {
+      'United Kingdom': 1
+    })
+
+    t.end()
+})

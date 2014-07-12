@@ -1,7 +1,7 @@
 var countryMap = require('./country-map')
 
 module.exports = function (possibleCountries) {
-  var result = {};
+  var result = {}
 
   possibleCountries.forEach(function (possibleCountry) {
     var country = countryMap[possibleCountry.toLowerCase()]
