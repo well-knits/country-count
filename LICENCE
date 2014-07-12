@@ -1,35 +1,3 @@
-# country-count
-
-Given an array of string, return a list of countries and number of times country appears in array
-
-[![NPM](https://nodei.co/npm/country-count.png?downloads&stars)](https://nodei.co/npm/country-count/)
-
-[![NPM](https://nodei.co/npm-dl/country-count.png)](https://nodei.co/npm/country-count/)
-
-## Installation
-
-```
-npm install country-count
-```
-
-## Example
-
-### Input
-
-```javascript
-var countryCount = require('./country-count')
-
-console.log(countryCount(['USA', 'America', 'Sweden', 'Finland']))
-```
-
-### Output
-
-```
-{ 'United States': 2, Sweden: 1, Finland: 1 }
-```
-
-## Licence
-
 Copyright (c) 2014 Lisa Övermyr & David Björklund
 
 This software is released under the MIT license:
@@ -51,4 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
