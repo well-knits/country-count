@@ -1,8 +1,7 @@
 var test = require('tap').test
   , countryCount = require('./country-count')
 
-
-test('should return list', function (t) {
+test('should return list with countries and nr of occurances', function (t) {
   var possibleCountries = ['USA', 'Sweden', 'United States of America', 'America', 'No country']
     , countryArr = countryCount(possibleCountries)
 
