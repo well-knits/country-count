@@ -2,14 +2,24 @@
   "name": "country-count",
   "version": "0.0.1",
   "description": "Given an array of string, return a list of countries and number of times country appears in array",
-  "main": "index.js",
+  "main": "country-count.js",
+  "dependencies": {
+    "world-countries": "^1.4.2"
+  },
+  "devDependencies": {
+    "tap": "^0.4.11"
+  },
   "scripts": {
     "test": "tap test.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ellell/country-count.git"
+  },
+  "author": "Lisa Övermyr <lisaovermyr@gmail.com>",
   "license": "MIT",
-  "dependencies": {
-    "tap": "^0.4.11",
-    "world-countries": "^1.4.2"
-  }
+  "bugs": {
+    "url": "https://github.com/ellell/country-count/issues"
+  },
+  "homepage": "https://github.com/ellell/country-count"
 }
