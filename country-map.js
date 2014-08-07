@@ -1,7 +1,4 @@
-var countryMap = {
-  'america': 'United States'
-  , 'uk': 'United Kingdom'
-}
+var countryMap = {}
 
 require('world-countries').forEach(function (country) {
   countryMap[country.name.toLowerCase()] = country.name
@@ -11,5 +8,10 @@ require('world-countries').forEach(function (country) {
     countryMap[altSpelling.toLowerCase()] = country.name
   })
 })
+
+// overwrite any existing definitions - (american became something weird)
+countryMap.america = 'United States'
+countryMap.american = 'United States'
+countryMap.uk = 'United Kingdom'
 
 module.exports = countryMap
