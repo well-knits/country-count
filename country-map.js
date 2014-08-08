@@ -1,18 +1,20 @@
 var countryMap = {}
 
-require('world-countries').forEach(function (country) {
-  countryMap[country.name.toLowerCase()] = country.name
-  countryMap[country.demonym.toLowerCase()] = country.name
-  country.altSpellings.forEach(function (altSpelling) {
-     if (altSpelling.length > 2)
-    countryMap[altSpelling.toLowerCase()] = country.name
+require('world-countries')
+  .sort(function (country1, country2) {
+    return parseFloat(country1.relevance) - parseFloat(country2.relevance)
   })
-})
+  .forEach(function (country) {
+    countryMap[country.name.toLowerCase()] = country.name
+    countryMap[country.demonym.toLowerCase()] = country.name
+    country.altSpellings.forEach(function (altSpelling) {
+       if (altSpelling.length > 2)
+      countryMap[altSpelling.toLowerCase()] = country.name
+    })
+  })
 
-// overwrite any existing definitions - (american became something weird)
+// add some custom names
 countryMap.america = 'United States'
-countryMap.american = 'United States'
-countryMap.french = 'France'
 countryMap.uk = 'United Kingdom'
 
 module.exports = countryMap
