@@ -12,6 +12,7 @@ require('world-countries').forEach(function (country) {
 // overwrite any existing definitions - (american became something weird)
 countryMap.america = 'United States'
 countryMap.american = 'United States'
+countryMap.french = 'France'
 countryMap.uk = 'United Kingdom'
 
 module.exports = countryMap

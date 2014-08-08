@@ -19,6 +19,11 @@ test('american is USA', function (t) {
   t.end()
 })
 
+test('french is france', function (t) {
+  t.deepEqual(countryCount([ 'french' ]), { France: 1 })
+  t.end()
+})
+
 test('should not parse IT, SO or AM as countries', function (t) {
   var possibleCountries = ['it', 'so', 'am', 'uk']
     , countryArr = countryCount(possibleCountries)
