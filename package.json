@@ -1,6 +1,6 @@
 {
   "name": "country-count",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Given an array of string, return a list of countries and number of times country appears in array",
   "main": "country-count.js",
   "dependencies": {
