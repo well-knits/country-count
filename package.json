@@ -7,7 +7,7 @@
     "world-countries": "~1.4.2"
   },
   "devDependencies": {
-    "tap": "^0.4.11"
+    "tap": "^12.1.1"
   },
   "scripts": {
     "test": "tap test.js"
